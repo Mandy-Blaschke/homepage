@@ -1,0 +1,44 @@
+@use 'src/app/var';
+
+.content {
+  @include var.content-box;
+
+  h1,h3, p {
+    color: var.$dark-brown;
+    text-align: center;
+    padding: 15px;
+    line-height: 160%;
+  }
+
+  p {
+    text-align: center;
+    width: 80%;
+  }
+
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: var.$box-border;
+    box-shadow: var.$box-shadow;
+
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .left {
+        align-self: start;
+        font-size: 2rem;
+        padding: 15px;
+      }
+
+      .right {
+        width: 90%;
+      }
+    }
+  }
+}
+

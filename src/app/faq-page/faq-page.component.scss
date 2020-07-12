@@ -1,0 +1,41 @@
+@use 'src/app/var';
+
+.content {
+  @include var.content-box;
+
+  h1 {
+    color: var.$dark-brown;
+  }
+
+  p {
+    text-align: center;
+    padding: 15px;
+  }
+
+  h3 {
+    color: var.$dark-brown;
+    border-bottom: 2px solid var.$row-lavender;
+    font-size: 1.2rem;
+  }
+
+  .question-box {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    margin: 15px;
+    padding: 15px;
+    border-radius: var.$box-border;
+    box-shadow: var.$box-shadow;
+    width: 80%;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 515px) {
+  .question-box {
+
+    app-question-element, h3 {
+      text-align: start;
+    }
+  }
+}

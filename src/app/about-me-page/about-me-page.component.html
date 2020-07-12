@@ -1,0 +1,68 @@
+<div class="content">
+
+  <video src="#" poster="assets/placeholder2.jpg" controls></video>
+
+  <div class="intro">
+
+    <h1>Über Mich</h1>
+
+    <p>
+      Ich freue mich sehr, Sie auf meiner Website begrüßen zu dürfen.
+    <p>
+      Wenn Sie sich hier umschauen, habe ich die erste Hürde geschafft - Sie wurden auf mich aufmerksam.
+    </p>
+
+    <p>
+      Damit Sie sich nicht durch alle Seiten und Dokumente klicken müssen, möchte ich Ihnen eine grobe Zusammenfassung
+      geben:
+    </p>
+
+  </div>
+
+  <div class="summary-box">
+    <p>
+      Geboren wurde ich 1989 in Rostock, wo ich bis 2014 gelebt habe. Seitdem ist der Großraum Frankfurt am Main mein
+      neues Zuhause.
+    </p>
+    <br>
+    <p>
+      Seit 2016 bin ich mit meinem wundervollen Mann verheiratet - <strong>Kinder haben wir keine</strong>.
+    </p>
+    <br>
+    <p>
+      Ich bin <span (click)="showBetriebswirt()"> staatlich geprüfte Betriebswirtin mit dem Schwerpunkt Finanzwirtschaft.</span>
+    </p>
+    <br>
+    <p>
+      Ich möchte als Frontend Entwicklerin arbeiten und wünsche mir dabei nicht das "große Geld",
+      sondern möchte in einem Unternehmen arbeiten, wo Teamarbeit und Menschlichkeit im Fokus stehen.
+    </p>
+    <br>
+    <p>
+      Meine Gehaltsvorstellung beläuft sich auf etwa 30.000,-€ pro Jahr, da mein Fokus aktuell darauf liegt,
+      Berufserfahrungen zu sammeln und meine Fahigkeiten zu erweitern.
+    </p>
+  </div>
+
+  <div class="intro">
+
+    <p>
+      Sie sind natürlich herzlich eingeladen, sich hier weiter umzuschauen und einen umfassenderen Eindruck von mir zu
+      gewinnen.
+    </p>
+
+  </div>
+
+  <div class="horizontal-row"> &nbsp;</div>
+
+  <h2>Besuchen Sie mich auch gern auf:</h2>
+
+  <div class="visit-links">
+    <a href="https://www.xing.com/profile/Mandy_Blaschke/cv" target="_blank">Xing</a>
+    <a href="https://github.com/Mandy-Blaschke" target="_blank">GitHub</a>
+    <a href="https://codepen.io/M-Andy89" target="_blank">CodePen</a>
+  </div>
+
+</div>
+
+<app-info-modal (close)="hideBetriebswirt()" *ngIf="betriebswirtModalVisible"></app-info-modal>

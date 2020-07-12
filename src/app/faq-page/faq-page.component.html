@@ -1,0 +1,40 @@
+<div class="content">
+
+  <h1>
+    Sind Sie neugierig?
+  </h1>
+
+  <p>
+    Ein Bewerbungsgespräch kostet jedes Unternehmen Zeit und Geld.
+    <br>
+    Es gibt Fragen, die so essentiell sind, dass Sie jedem Bewerber gestellt und solche,
+    <br>
+    die den Interviewer möglicherweise interessieren,
+    jedoch nicht gestellt werden dürfen.
+    <br>
+    Auf eben diese Fragen möchte ich Ihnen hier Rede und Antwort stehen,
+    <br>
+    um Ihnen Zeit und Mühen und somit auch Geld
+    sparen zu können.
+  </p>
+
+  <div class="question-box">
+
+    <h3>
+      Häufig gestellte Fragen
+    </h3>
+
+      <app-question-element *ngFor="let item of faq" [qaPair]="item"></app-question-element>
+
+  </div>
+
+  <div class="question-box">
+
+    <h3>
+      Fragen, die nicht gestellt werden dürfen
+    </h3>
+
+      <app-question-element *ngFor="let item of forbiddenQuestions" [qaPair]="item"></app-question-element>
+
+  </div>
+</div>

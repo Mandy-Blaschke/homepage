@@ -1,0 +1,42 @@
+<div class="content">
+
+  <h1>
+    Habe ich Ihr Interesse wecken können?
+  </h1>
+
+  <p>
+    Dann freue ich mich auf eine Nachricht von Ihnen und darauf, Sie kennenlernen zu dürfen.
+    <br>
+    <br>
+    Ich stehe Ihnen ab August 2020 zur Verfügung - gern auch für ein Praktikum.
+    <br>
+    <br>
+    Sollten Sie mich telefonisch einmal nicht erreichen können, hinterlassen Sie mir bitte eine Nachricht mit Ihrem
+    Namen und Ihrer Telefonnummer auf der Mailbox und ich werde Sie umgehend zurück rufen.
+  </p>
+
+  <div class="contact-box">
+
+    <h3>
+      So erreichen Sie mich:
+    </h3>
+
+    <div class="row" *ngFor="let item of contactData">
+
+      <div class="left">
+        <div>
+          {{item.symbol}}
+        </div>
+      </div>
+
+      <div class="right">
+        <div *ngFor="let item of item.row">
+          {{item}}
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,11 @@
+<div class="question" (click)="toggleAnswer()" [class.bold]="showAnswer">
+  {{qaPair.question}}
+</div>
+
+<div class="answer" *ngIf="showAnswer === true">
+  {{qaPair.answer}}
+
+  <div class="closeAnswerBtn" (click)="toggleAnswer()">schließen</div>
+</div>
+
+

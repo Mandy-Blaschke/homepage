@@ -1,0 +1,17 @@
+<div class="banner">
+
+  <div class="links">
+
+    <a *ngFor="let item of navi" routerLink="{{item.url}}" routerLinkActive="active">
+
+      <span class="hover-effect">&#10048;</span>
+      {{item.text}}
+      <span class="hover-effect">&#10048;</span>
+
+    </a>
+
+  </div>
+
+  <app-card-header-element></app-card-header-element>
+
+</div>

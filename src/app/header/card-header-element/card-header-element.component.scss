@@ -1,0 +1,36 @@
+@use 'src/app/var';
+
+.card {
+  display: flex;
+  padding: 10px;
+  width: 320px;
+  height: 150px;
+  border-radius: 8px;
+  background-color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var.$box-shadow;
+
+  .card-text {
+    width: 70%;
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      margin: 10px 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .card-image {
+    width: 30%;
+
+    img {
+      width: 90%;
+      border-radius: 45%;
+    }
+  }
+}
+

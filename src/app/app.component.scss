@@ -1,0 +1,12 @@
+@use 'src/app/var';
+
+.placeholder {
+  height: 15px;
+}
+
+
+@media (max-width: 900px) {
+  .placeholder {
+    background-color: var.$content-background-color;
+  }
+}

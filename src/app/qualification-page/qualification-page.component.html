@@ -1,0 +1,84 @@
+<div class="content">
+
+  <h1>Zertifikate</h1>
+
+  <p>
+    Hier finden Sie alle meine bisherigen Zertifikate als PDF-Datein.
+  </p>
+
+  <div class="preview-box">
+
+    <div class="preview" *ngFor="let item of certificates">
+
+      <a target="_blank" [href]="item.url">
+
+        <img [src]='item.preview'>
+        <div class="label"> {{item.label}} </div>
+
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="horizontal-row"> &nbsp;</div>
+
+
+  <h1>Portfolio</h1>
+
+  <p>
+    Dies sind einige meiner ersten Projekte, die ich im Rahmen der Kurse in meiner Freizeit erstellt habe.
+  </p>
+
+  <div class="preview-box">
+
+    <div class="preview" *ngFor="let item of portfolio">
+
+      <a target="_blank" [href]="item.url">
+
+        <img [src]='item.preview'>
+        <div class="label"> {{item.label}} </div>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="horizontal-row"> &nbsp;</div>
+
+  <h1>Werdegang</h1>
+
+
+  <div class="stations">
+
+    <div class="stations-element" *ngFor="let item of station">
+
+      <h4 class="company">
+        {{item.company}}
+      </h4>
+
+      <div class="row">
+        <p class="position">
+          {{item.position}}
+          <br>
+          <span class="special">
+            {{item.specialization}}
+            </span>
+        </p>
+
+        <p class="date">
+          {{item.date.toUpperCase()}}
+        </p>
+      </div>
+
+      <p class="describtion">
+        {{item.description}}
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
