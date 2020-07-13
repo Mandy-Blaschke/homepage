@@ -21,6 +21,16 @@
       margin-top: 25px;
       color: var.$dark-brown;
     }
+
+      .in-app-links {
+        text-decoration: none;
+        color: var.$link-color;
+
+        &:hover {
+          font-weight: bolder;
+          cursor: pointer;
+        }
+      }
   }
 
   .summary-box {
@@ -54,20 +64,6 @@
   h2 {
     color: var.$dark-brown;
     text-align: center;
-  }
-
-  .visit-links {
-    display: flex;
-
-    a {
-      padding: 2px 25px;
-      text-decoration: none;
-      color: var.$link-color;
-
-      &:hover {
-        @include var.link;
-      }
-    }
   }
 
 }

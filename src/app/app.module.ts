@@ -8,10 +8,11 @@ import { AboutMePageComponent } from './about-me-page/about-me-page.component';
 import { FaqPageComponent } from './faq-page/faq-page.component';
 import { QualificationPageComponent } from './qualification-page/qualification-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
-import { FooterComponent } from './footer/footer.component';
 import { InfoModalComponent } from './about-me-page/info-modal/info-modal.component';
 import { QuestionElementComponent } from './faq-page/question-element/question-element.component';
 import { HeaderElementComponent } from './header-element/header-element.component';
+import { FooterComponent } from './footer/footer.component';
+import { ToTopButtonComponent } from './to-top-button/to-top-button.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +22,11 @@ import { HeaderElementComponent } from './header-element/header-element.componen
     FaqPageComponent,
     QualificationPageComponent,
     ContactPageComponent,
-    FooterComponent,
     InfoModalComponent,
     QuestionElementComponent,
     HeaderElementComponent,
+    FooterComponent,
+    ToTopButtonComponent,
   ],
   imports: [
     BrowserModule,
