@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {Navi} from '../header/banner-header-element/banner-header-element.component';
 
 @Component({
   selector: 'app-header-element',
@@ -31,4 +30,9 @@ export class HeaderElementComponent implements OnInit {
   ngOnInit(): void {
   }
 
+}
+
+export interface Navi {
+  text: string;
+  url: string;
 }

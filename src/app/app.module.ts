@@ -3,9 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { CardHeaderElementComponent } from './header/card-header-element/card-header-element.component';
-import { BannerHeaderElementComponent } from './header/banner-header-element/banner-header-element.component';
+import { CardHeaderElementComponent } from './header-element/card-header-element/card-header-element.component';
 import { AboutMePageComponent } from './about-me-page/about-me-page.component';
 import { FaqPageComponent } from './faq-page/faq-page.component';
 import { QualificationPageComponent } from './qualification-page/qualification-page.component';
@@ -18,9 +16,7 @@ import { HeaderElementComponent } from './header-element/header-element.componen
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     CardHeaderElementComponent,
-    BannerHeaderElementComponent,
     AboutMePageComponent,
     FaqPageComponent,
     QualificationPageComponent,
