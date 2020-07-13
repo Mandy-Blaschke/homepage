@@ -1,9 +1,14 @@
+@use 'src/app/var';
+
 .wrapper {
   position: relative;
   left: 0;
   top: 0;
-  background-color: #bd0833;
-  height: 300px;
+  height: 160px;
+  background-image: url("~src/assets/kirschbaum.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px;
 
   .background, .foreground {
     display: flex;
@@ -24,24 +29,48 @@
   }
 
   .brown-bar {
-    background-color: #474444;
+    box-shadow: var.$box-shadow;
+    background-color: var.$brown;
     height: 100px;
   }
 
   .links {
-    background-color: green;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a {
+      font-size: large;
+      color: var.$gray;
+      font-weight: bolder;
+      text-decoration: none;
+
+      .hover-effect {
+        color: transparent;
+      }
+
+      &:hover, &.active {
+        color: whitesmoke;
+        cursor: pointer;
+
+        .hover-effect {
+          color: whitesmoke;
+        }
+      }
+    }
   }
 
   .card {
-    background-color: yellow;
+    flex-grow: 0.3;
   }
 
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .wrapper {
-    height: 400px;
+    height: 250px;
 
 
     .background {
@@ -50,6 +79,45 @@
 
     .foreground {
       flex-direction: column-reverse;
+
+      .links {
+        flex-grow: 0;
+        padding: 25px 0;
+        justify-content: space-evenly;
+        width: 100%;
+      }
+
+      .card {
+        flex-grow: 0;
+      }
     }
   }
 }
+
+
+@media (max-width: 555px) {
+  .wrapper {
+    height: 260px;
+
+    .background {
+
+      .brown-bar {
+        height: 160px;
+      }
+    }
+
+    .foreground {
+
+      .links {
+        flex-wrap: wrap;
+
+        a {
+          text-align: center;
+          width: 50%;
+          padding: 5px 0;
+        }
+      }
+    }
+  }
+}
+
