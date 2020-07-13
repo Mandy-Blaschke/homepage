@@ -12,7 +12,7 @@
 
       <a target="_blank" [href]="item.url">
 
-        <img [src]='item.preview'>
+        <img [src]='item.preview' alt="Vorschaubild Zertifikat">
         <div class="label"> {{item.label}} </div>
 
       </a>
@@ -36,7 +36,7 @@
 
       <a target="_blank" [href]="item.url">
 
-        <img [src]='item.preview'>
+        <img [src]='item.preview' alt="Vorschaubild Projekt">
         <div class="label"> {{item.label}} </div>
 
       </a>
@@ -78,6 +78,28 @@
       </p>
 
     </div>
+
+  </div>
+
+  <div class="text-box">
+
+    <p>
+      Falls Sie es noch nicht gelesen haben, möchte ich Sie einladen, sich die folgenden Seiten
+      anzusehen:
+    </p>
+
+    <ul>
+      <li>
+        Hier finden Sie Antworten auf Fragen, die in nahezu jeden Bewerbungsgespräch aufkommen und solche,
+        die den Interviewer möglicherweise interessieren, auf die ein Bewerber jedoch nicht antworten muss:
+        <a class="in-app-links" routerLink="/antworten"><u>Antworten</u></a>.
+      </li>
+      <li>
+        Wenn ich Ihr Interesse wecken konnte, finden Sie
+        <a class="in-app-links" routerLink="/kontakt"><u>hier</u></a>
+        meine Kontaktdaten.
+      </li>
+    </ul>
 
   </div>
 

@@ -29,6 +29,10 @@
     width: 80%;
     text-align: justify;
   }
+
+  .text-box {
+    @include var.text-box;
+  }
 }
 
 @media (max-width: 515px) {

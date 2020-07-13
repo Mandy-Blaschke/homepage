@@ -14,6 +14,45 @@ $box-shadow: 2px 2px 12px darkgrey;
   background-color: $content-background-color;
 }
 
+@mixin text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 85px;
+
+  h1 {
+    margin-top: 25px;
+    color: $dark-brown;
+  }
+
+  p {
+    text-align: start;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      padding: 15px;
+      margin: 10px;
+      background-color: whitesmoke;
+      box-shadow: $box-shadow;
+      border-radius: $box-border;
+      min-width: 250px;
+
+      .in-app-links {
+        text-decoration: none;
+        color: $link-color;
+
+        &:hover {
+          font-weight: bolder;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
 // Colors ---------------------------------------
 
 $brown: #c7b4b4;

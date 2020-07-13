@@ -26,6 +26,7 @@
 
   .foreground {
     align-items: center;
+    justify-content: center;
   }
 
   .brown-bar {
@@ -35,6 +36,7 @@
   }
 
   .links {
+    max-width: 1000px;
     display: flex;
     flex-grow: 1;
     align-items: center;
@@ -60,11 +62,6 @@
       }
     }
   }
-
-  .card {
-    flex-grow: 0.3;
-  }
-
 }
 
 
@@ -79,6 +76,7 @@
 
     .foreground {
       flex-direction: column-reverse;
+      justify-content: flex-start;
 
       .links {
         flex-grow: 0;

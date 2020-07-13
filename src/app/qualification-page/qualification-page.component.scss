@@ -93,6 +93,11 @@
       }
     }
   }
+
+  .text-box {
+    @include var.text-box;
+  }
+
 }
 
 
