@@ -6,15 +6,18 @@
   right: 15px;
   color: var.$gray;
   background-color: var.$brown;
-  padding: 5px 15px;
   border: none;
   border-radius: var.$box-border;
   outline: none;
+  width: fit-content;
+  padding: 5px;
+  margin-top: 50px;
 
   &:hover {
-    color: whitesmoke;
+    background-color: whitesmoke;
     cursor: pointer;
-    background-color: var.$light-gray;
     font-weight: bolder;
+    color: var.$link-color;
+    box-shadow: var.$box-shadow;
   }
 }
