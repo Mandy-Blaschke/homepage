@@ -13,6 +13,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { InfoModalComponent } from './about-me-page/info-modal/info-modal.component';
 import { QuestionElementComponent } from './faq-page/question-element/question-element.component';
+import { HeaderElementComponent } from './header-element/header-element.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { QuestionElementComponent } from './faq-page/question-element/question-e
     FooterComponent,
     InfoModalComponent,
     QuestionElementComponent,
+    HeaderElementComponent,
   ],
   imports: [
     BrowserModule,

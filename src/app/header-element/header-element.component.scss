@@ -1,0 +1,55 @@
+.wrapper {
+  position: relative;
+  left: 0;
+  top: 0;
+  background-color: #bd0833;
+  height: 300px;
+
+  .background, .foreground {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .background {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .foreground {
+    align-items: center;
+  }
+
+  .brown-bar {
+    background-color: #474444;
+    height: 100px;
+  }
+
+  .links {
+    background-color: green;
+  }
+
+  .card {
+    background-color: yellow;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+  .wrapper {
+    height: 400px;
+
+
+    .background {
+      justify-content: flex-end;
+    }
+
+    .foreground {
+      flex-direction: column-reverse;
+    }
+  }
+}
