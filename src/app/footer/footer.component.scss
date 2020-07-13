@@ -1,0 +1,31 @@
+@use 'src/app/var';
+
+.horizontal-row {
+  @include var.horizontal-row;
+  color: var.$dark-brown;
+  width: 100%;
+}
+
+h2 {
+  color: var.$dark-brown;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+
+.visit-links {
+  display: flex;
+  justify-content: center;
+
+  a {
+    font-size: 1.1rem;
+    padding: 25px 45px 45px 25px;
+    text-decoration: none;
+    color: var.$link-color;
+
+    &:hover {
+      @include var.link;
+      font-size: 1.2rem;
+    }
+  }
+}
