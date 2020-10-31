@@ -54,7 +54,7 @@ export const portfolio: PreviewModel[] = [
   {
     preview: './assets/previews/portfolio.png',
     label: 'Mandy\'s Portfolio',
-    url: 'https://mb89-portfolio.web.app/'
+    url: 'https://portfolio.mandy-blaschke.de/'
   },
 ];
 
