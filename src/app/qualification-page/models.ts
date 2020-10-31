@@ -48,45 +48,13 @@ export const certificatePreview: PreviewModel[] = [
     label: 'Zertifikat - CSS - The Complete Guide 2020 (inkl. Flexbox, Grid & Sass)',
     url: 'assets/certificates/UdemyCSSTheCompleteGuide2020.pdf'
   },
-
-
 ];
 
 export const portfolio: PreviewModel[] = [
   {
-    preview: './assets/previews/homepage.jpg',
-    label: 'Meine Homepage',
-    url: 'https://github.com/Mandy-Blaschke/homepage'
-  },
-  {
-    preview: './assets/previews/hangman-game.jpg',
-    label: 'Hangman-Spiel',
-    url: 'https://github.com/Mandy-Blaschke/hangman-game'
-  },
-  {
-    preview: './assets/previews/tic-tac-toe-game.jpg',
-    label: 'TicTacToe-Spiel',
-    url: 'https://github.com/Mandy-Blaschke/tic-tac-toe-game'
-  },
-  {
-    preview: './assets/previews/scissors-stone-paper.jpg',
-    label: 'Schere-Stein-Papier-Spiel',
-    url: 'https://github.com/Mandy-Blaschke/scissors-stone-paper-game'
-  },
-  {
-    preview: './assets/previews/zahlen-raten-spiel.jpg',
-    label: 'Zahlen-Raten-Spiel',
-    url: 'https://github.com/Mandy-Blaschke/zahlen-raten-spiel'
-  },
-  {
-    preview: './assets/previews/blog.png',
-    label: 'Blog Page',
-    url: 'https://github.com/Mandy-Blaschke/blog-page'
-  },
-  {
-    preview: './assets/previews/freecodecamp.jpg',
-    label: 'FreeCodeCampProjects',
-    url: 'https://github.com/Mandy-Blaschke/freecodecamp-projects'
+    preview: './assets/previews/portfolio.png',
+    label: 'Mandy\'s Portfolio',
+    url: 'https://mb89-portfolio.web.app/'
   },
 ];
 
