@@ -48,6 +48,11 @@ export const certificatePreview: PreviewModel[] = [
     label: 'Zertifikat - CSS - The Complete Guide 2020 (inkl. Flexbox, Grid & Sass)',
     url: 'assets/certificates/UdemyCSSTheCompleteGuide2020.pdf'
   },
+  {
+    preview: './assets/previews/certificate-angular(2+)-vertehen-und-anwenden.jpg',
+    label: 'Zertifikat - Angular (2+) verstehen und anwenden',
+    url: 'assets/certificates/UdemyAngular(2+)VerstehenUndAnwenden.pdf'
+  },
 ];
 
 export const portfolio: PreviewModel[] = [
